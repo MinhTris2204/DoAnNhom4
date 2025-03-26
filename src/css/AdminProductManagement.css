@@ -1,0 +1,237 @@
+/* Toàn cục cho trang này (không cần thay đổi vì nằm trong body) */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+  color: #495057;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container chính */
+.admin-product-management {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Các tiêu đề trong trang */
+.admin-product-management h1,
+.admin-product-management h2 {
+  color: #343a40;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Form Thêm/Sửa Sản Phẩm */
+.admin-product-management .add-product-form {
+  background: #ffffff;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.admin-product-management .add-product-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.admin-product-management .add-product-form input,
+.admin-product-management .add-product-form select {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-product-management .add-product-form input:focus,
+.admin-product-management .add-product-form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.admin-product-management .add-product-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.admin-product-management .add-product-form button:hover:not(:disabled) {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.admin-product-management .add-product-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Danh sách Sản Phẩm */
+.admin-product-management .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.admin-product-management .product-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-product-management .product-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.admin-product-management .product-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.admin-product-management .product-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.admin-product-management .product-actions button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.admin-product-management .product-actions button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.admin-product-management
+  .product-actions
+  button:first-child:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.admin-product-management .product-actions button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.admin-product-management
+  .product-actions
+  button:last-child:hover:not(:disabled) {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+.admin-product-management .product-actions button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Hiển thị lỗi và thông báo tải */
+.admin-product-management p {
+  color: #dc3545;
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.admin-product-management p.loading {
+  color: #007bff;
+  font-style: italic;
+}
+
+/* Image Preview */
+.admin-product-management img {
+  max-width: 200px;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Phân trang */
+.admin-product-management .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.admin-product-management .pagination button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.admin-product-management .pagination button:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.admin-product-management .pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.admin-product-management .pagination span {
+  font-size: 16px;
+  color: #343a40;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-product-management .add-product-form {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .admin-product-management .product-item {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .admin-product-management .pagination {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .admin-product-management .pagination button {
+    width: 100%;
+    max-width: 200px;
+  }
+}

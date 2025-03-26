@@ -1,0 +1,158 @@
+.giohang-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.giohang-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.giohang-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.giohang-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.giohang-stt {
+  /* Thay .item-number thành .giohang-stt để khớp với JSX */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+}
+
+.giohang-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.giohang-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.giohang-info h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.giohang-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.quantity-control button:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}
+
+.quantity-control button:disabled {
+  background-color: #f0f0f0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.quantity-control span {
+  min-width: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: fit-content;
+  transition: background-color 0.2s;
+}
+
+.remove-btn:hover {
+  background-color: #e04343;
+}
+
+.giohang-summary {
+  margin-top: 30px;
+  text-align: right;
+  padding: 20px 0;
+  border-top: 2px solid #ddd;
+}
+
+.giohang-summary h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.checkout-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.checkout-btn:hover {
+  background-color: #218838;
+}
+
+.back-btn {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #0069d9;
+}

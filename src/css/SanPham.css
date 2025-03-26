@@ -1,0 +1,453 @@
+/* Container chính */
+.sanpham-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tiêu đề danh sách sản phẩm */
+.sanpham-container .sanpham-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Bộ lọc sản phẩm */
+.sanpham-container .filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sanpham-container .filter-bar select {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #007bff;
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  min-width: 200px; /* Đảm bảo select giá không quá hẹp */
+}
+
+.sanpham-container .filter-bar select:hover {
+  border-color: #0056b3;
+}
+
+/* Lưới sản phẩm */
+.sanpham-container .sanpham-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  align-items: stretch;
+}
+
+/* Mỗi sản phẩm trong danh sách */
+.sanpham-container .sanpham-item {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.sanpham-container .sanpham-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Ảnh sản phẩm trong danh sách */
+.sanpham-container .sanpham-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Tên sản phẩm */
+.sanpham-container .sanpham-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Mã sản phẩm */
+.sanpham-container .sanpham-code {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Giá sản phẩm */
+.sanpham-container .sanpham-price {
+  font-size: 18px;
+  color: #27ae60;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Mô tả sản phẩm */
+.sanpham-container .sanpham-description {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Thông báo */
+.sanpham-container .loading {
+  font-size: 16px;
+  color: #007bff;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.sanpham-container .no-results {
+  font-size: 16px;
+  color: #dc3545;
+  margin: 20px 0;
+}
+
+/* Phân trang */
+.sanpham-container .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.sanpham-container .pagination button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sanpham-container .pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.sanpham-container .pagination button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.sanpham-container .pagination span {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Chi tiết sản phẩm */
+.sanpham-container .product-detail {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.sanpham-container .product-detail-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sanpham-container .product-image-wrapper {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.sanpham-container .product-detail-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.sanpham-container .product-detail-image:hover {
+  transform: scale(1.02);
+}
+
+.sanpham-container .product-info {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.sanpham-container .product-detail-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.sanpham-container .product-detail-code {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.sanpham-container .product-detail-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #27ae60;
+  margin-bottom: 20px;
+}
+
+.sanpham-container .product-detail-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Container cho các nút hành động */
+.sanpham-container .product-actions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Các nút hành động chính */
+.sanpham-container .product-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+/* Nút "Thêm vào giỏ hàng" và "Mua ngay" */
+.sanpham-container .add-to-cart-btn,
+.sanpham-container .buy-now-btn {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+.sanpham-container .add-to-cart-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.sanpham-container .add-to-cart-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.sanpham-container .buy-now-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.sanpham-container .buy-now-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Nút "Quay lại danh sách" */
+.sanpham-container .back-btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+  align-self: flex-start;
+}
+
+.sanpham-container .back-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Chat Icon */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #b8860b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: blink 1.5s infinite;
+  z-index: 1000;
+}
+
+.chat-icon-img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Chat Popup */
+.chat-popup {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.chat-link {
+  text-decoration: none;
+}
+
+.chat-option {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.chat-option:hover {
+  transform: scale(1.1);
+}
+
+/* Hiệu ứng nhấp nháy */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sanpham-container {
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  .sanpham-container .filter-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sanpham-container .filter-bar select {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .sanpham-container .sanpham-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .sanpham-container .product-detail-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sanpham-container .product-image-wrapper,
+  .sanpham-container .product-info {
+    max-width: 100%;
+  }
+
+  .sanpham-container .pagination {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sanpham-container .pagination button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .sanpham-container .product-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sanpham-container .add-to-cart-btn,
+  .sanpham-container .buy-now-btn {
+    width: 100%;
+  }
+
+  .sanpham-container .back-btn {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* Responsive cho Chat Icon và Popup */
+  .chat-icon {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .chat-icon-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .chat-popup {
+    bottom: 75px;
+    right: 15px;
+  }
+
+  .chat-option {
+    width: 35px;
+    height: 35px;
+  }
+}

@@ -1,0 +1,30 @@
+/* Căn chỉnh toàn bộ trang */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Đảm bảo trang chiếm toàn bộ chiều cao */
+}
+
+/* Nội dung chính sẽ chiếm phần lớn không gian, giúp đẩy Footer xuống */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Định dạng Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Định dạng Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}

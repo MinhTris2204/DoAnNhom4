@@ -1,12 +1,17 @@
-# Getting Started with Create React App
+# ĐỒ ÁN CƠ SỞ – NHÓM 4
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Khoa Công Nghệ Thông Tin - Học Viện Hàng Không Việt Nam
 
-## Available Scripts
+Đề tài: Phát Triển Hệ Thống Website Bán Hàng Trang Sức Bằng Nodejs, Reactjs, Mysql
 
-In the project directory, you can run:
+## Thành viên nhóm:
 
-### `npm start`
+-Dương Minh Trí (Nhóm Trưởng)
+-Lê Hồng Bạch Nhật
+-Lê Thị Hải 
+
+### `npm start` ![image](https://github.com/user-attachments/assets/2949d2ee-1404-4ef3-a732-a73fc3be05cc)
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

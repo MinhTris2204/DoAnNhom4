@@ -8,7 +8,7 @@
 
 - Dương Minh Trí (Nhóm Trưởng)
 - Lê Hồng Bạch Nhật
-- Lê Thị Hải 
+- Lê Thị Hải Uyên
 
 ### 🛠 Công Nghê Sử Dụng
 - Node.js  

@@ -11,9 +11,7 @@ Khoa Công Nghệ Thông Tin - Học Viện Hàng Không Việt Nam
 -Lê Thị Hải 
 
 ### 🛠 Công Nghê Sử Dụng
-Nodejs
-Reactjs 
-Mysql
+Node.js   React.js   MySQL
 
 
 

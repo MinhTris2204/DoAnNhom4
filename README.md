@@ -10,7 +10,7 @@
 - Lê Hồng Bạch Nhật
 - Lê Thị Hải Uyên
 
-### 🛠 Công Nghê Sử Dụng
+## 🛠 Công Nghê Sử Dụng
 - Node.js  
 - React.js  
 - MySQL

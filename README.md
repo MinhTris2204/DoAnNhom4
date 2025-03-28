@@ -1,6 +1,6 @@
 # 📘 ĐỒ ÁN CƠ SỞ – NHÓM 4
 
-- Khoa Công Nghệ Thông Tin - Học Viện Hàng Không Việt Nam - #FITVAA
+- Khoa Công Nghệ Thông Tin - Học Viện Hàng Không Việt Nam - #FitVAA
 
 - Đề tài: Phát Triển Hệ Thống Website Bán Hàng Trang Sức Bằng Nodejs, Reactjs, Mysql
 
